@@ -1,10 +1,23 @@
+@keyframes rebote {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #dbc5f3;
+  background-image: linear-gradient(to bottom, #dbc5f3, #c7a3e9, #a060e6);
+  background-size: cover;
   font-family: "Roboto", sans-serif;
 }
 
@@ -18,6 +31,11 @@ nav {
   border-radius: 0 0 25px 25px;
   height: 75px;
   box-shadow: inset 0px -5px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .navLinks {
@@ -63,15 +81,14 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 35%;
-  width: 60%;
+  height: 100%;
   text-align: center;
   background-color: #ffffff;
   color: black;
-  border-radius: 25px;
-  margin: 50px auto;
   padding: 15px;
   gap: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 150px;
 }
 .bienvenida h1 {
   font-size: 50px;
@@ -91,7 +108,7 @@ nav {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   background-color: red;
   background-image: url("../images/FotosRelleno/CabifyParking.jpeg");
   background-size: cover;
@@ -107,4 +124,16 @@ nav {
   backdrop-filter: blur(5px);
   z-index: -1;
   border-radius: 15px;
+}
+
+#bienvenidaButton {
+  width: 20%;
+  height: 25%;
+  transition: transform 0.3s ease;
+}
+#bienvenidaButton:hover {
+  background-color: #9154d9;
+  color: white;
+  animation: rebote 0.5s;
+  transform: scale(1.1);
 }
