@@ -53,7 +53,11 @@ root/
 - **Curso:** 1º CFGS de DAW
 
 ## Licencia
-Este proyecto se distribuye bajo la licencia MIT. Puedes consultar más detalles en el archivo **LICENSE** del repositorio.
+Este proyecto usa contenido de terceros:
+- Las imagenes en general son de la empresa **Cabify**
+- La empresa **Cabify** existe y este sitio no es oficial.
+- El código y diseño del repositorio es todo creado por una única persona
+- Los iconos usados en el proyecto son de **Font Awesome**
 
 ---
 **¡Gracias por visitar mi proyecto!**
