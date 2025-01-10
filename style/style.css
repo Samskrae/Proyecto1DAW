@@ -144,3 +144,27 @@ nav {
   transform: scale(1.1);
   cursor: pointer;
 }
+
+.seccionSugerencias {
+  margin: 100px 50px 0px 100px;
+}
+.seccionSugerencias h2 {
+  margin: 2% 5%;
+}
+.sugerencias {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  gap: 2%;
+}
+.sugerenciasContainer {
+  padding: 25px;
+  width: 25%;
+  background-color: white;
+  border-radius: 25px;
+}
+.sugerenciasLogo {
+  width: 100%;
+}
