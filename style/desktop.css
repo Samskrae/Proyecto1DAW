@@ -130,4 +130,10 @@
   .saberMas:hover {
     background-color: #dbc5f3;
   }
+
+  .descargarApp {
+    width: 100%;
+    background-color: white;
+    margin-top: 5%;
+  }
 }
