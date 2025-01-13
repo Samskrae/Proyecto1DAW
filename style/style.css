@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, #dbc5f3, #c7a3e9, #a060e6);
+  background-image: linear-gradient(to bottom, #dbc5f3, #dbc5f3, #c7a3e9);
   background-size: cover;
   font-family: "Roboto", sans-serif;
 }
@@ -166,5 +166,9 @@ nav {
   border-radius: 25px;
 }
 .sugerenciasLogo {
-  width: 100%;
+  width: 25%;
+}
+
+.sugerenciasCard {
+  display: flex;
 }
