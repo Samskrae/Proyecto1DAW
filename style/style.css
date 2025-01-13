@@ -1,20 +1,7 @@
-@keyframes rebote {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
   background-image: linear-gradient(to bottom, #dbc5f3, #dbc5f3, #c7a3e9);
   background-size: cover;
@@ -22,64 +9,18 @@ body {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 20px 20px;
   background-color: #a169de;
-  border-radius: 0 0 25px 25px;
-  box-shadow: inset 0px -5px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-}
-
-.navLinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-size: 20px;
-  font-weight: bold;
-  gap: 55px;
-}
-
-.navLinks a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: white;
-  transition: transform 0.3s ease;
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
-  transition: padding 0.3s ease;
-}
-
-.navLinks a:hover {
-  transform: scale(1.1);
-  background-color: white;
-  color: black;
-  padding: 5px;
-  border-radius: 25px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: inset 0px -5px 4px rgba(0, 0, 0, 0.25);
 }
 
 #navIcon {
   height: 40px;
-}
-
-.navButton {
-  padding: 15px;
-  font-size: 20px;
-  font-weight: bold;
-  border: 0 solid transparent;
-  border-radius: 15px;
-  transition: background-color 0.3s ease;
-}
-
-.navButton:hover {
-  background-color: #dbc5f3;
 }
 
 .bienvenida {
@@ -96,12 +37,7 @@ nav {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-top: 150px;
 }
-.bienvenida h1 {
-  font-size: 50px;
-  width: 50%;
-}
 .bienvenida h3 {
-  font-size: 20px;
   color: #5a5a5a;
 }
 
@@ -132,9 +68,26 @@ nav {
   border-radius: 15px;
 }
 
+@keyframes rebote {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 #bienvenidaButton {
   width: 20%;
   height: 25%;
+  padding: 15px;
+  font-weight: bold;
+  border: 0 solid transparent;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
   transition: transform 0.3s ease;
 }
 #bienvenidaButton:hover {
@@ -148,27 +101,46 @@ nav {
 .seccionSugerencias {
   margin: 100px 50px 0px 100px;
 }
-.seccionSugerencias h2 {
-  margin: 2% 5%;
-}
+
 .sugerencias {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: black;
-  gap: 2%;
+  align-items: stretch;
+  text-align: justify;
 }
 .sugerenciasContainer {
   padding: 25px;
-  width: 25%;
+  width: 80%;
+  min-height: 11vh;
+  height: auto;
   background-color: white;
   border-radius: 25px;
+  margin-bottom: 10px;
 }
 .sugerenciasLogo {
-  width: 25%;
+  width: 75%;
+  height: 100%;
 }
 
+.texto {
+  font-size: 1em;
+  flex-grow: 1;
+  overflow: hidden;
+}
 .sugerenciasCard {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.saberMas {
+  padding: 5px;
+  margin-top: 10%;
+  font-weight: bold;
+  border: 0 solid transparent;
+  border-radius: 15px;
+  font-size: 1em;
+  cursor: pointer;
 }
