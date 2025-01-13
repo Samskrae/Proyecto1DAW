@@ -205,5 +205,77 @@
     width: 100%;
     background-color: white;
     margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.25);
+  }
+  .cuadroDescarga {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 75%;
+
+    background-color: #c7a3e9;
+    margin: 50px;
+    border-radius: 25px;
+    min-height: 100%;
+  }
+  .cuadroDescarga img {
+    width: 50%;
+  }
+
+  .areaTexto {
+    width: 65%;
+    /* color: white; */
+    margin-left: 100px;
+    text-align: justify;
+  }
+  .areaTexto h1 {
+    font-size: 3vw;
+    color: black;
+    text-align: left;
+    margin-bottom: 20px;
+    word-spacing: 0.2em;
+  }
+  .areaTexto p {
+    max-height: 10em;
+    line-height: 1em;
+    overflow: hidden;
+  }
+
+  .areaTexto a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1vw;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+
+  .botonesDescargar {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+  }
+  .appstore {
+    background-color: #000;
+  }
+
+  .googleplay {
+    background-color: #3bcc5a;
+  }
+
+  .areaTexto a i {
+    margin-right: 10px;
+    font-size: 30px;
+  }
+
+  .areaTexto a:hover {
+    opacity: 0.8;
   }
 }
