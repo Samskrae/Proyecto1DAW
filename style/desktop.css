@@ -1,4 +1,5 @@
 @media (min-width: 992px) {
+  /* Animaciones */
   @keyframes rebote {
     0% {
       transform: scale(1);
@@ -11,14 +12,38 @@
     }
   }
 
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Body Styles */
+  body {
+    background-image: linear-gradient(to bottom, #dbc5f3, #dbc5f3, #c7a3e9);
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* Barra de nav */
   nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     padding: 20px 20px;
+    background-color: #a169de;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 0 0 25px 25px;
+    box-shadow: inset 0px -5px 4px rgba(0, 0, 0, 0.25);
   }
-
+  #navIcon {
+    height: 40px;
+  }
   .navLinks {
     display: flex;
     justify-content: center;
@@ -28,25 +53,20 @@
     font-weight: bold;
     gap: 55px;
   }
-
   .navLinks a {
     margin: 0 10px;
     text-decoration: none;
     color: white;
-    transition: transform 0.3s ease;
-    transition: background-color 0.3s ease;
-    transition: color 0.3s ease;
-    transition: padding 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease,
+      padding 0.3s ease;
+    border-radius: 25px;
   }
-
   .navLinks a:hover {
     transform: scale(1.1);
     background-color: white;
     color: black;
     padding: 5px;
-    border-radius: 25px;
   }
-
   .navButton {
     padding: 15px;
     font-size: 20px;
@@ -55,19 +75,36 @@
     border-radius: 15px;
     transition: background-color 0.3s ease;
   }
-
   .navButton:hover {
     background-color: #dbc5f3;
   }
 
+  /* Sección Bienvenida */
+  .bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    color: black;
+    padding: 15px;
+    gap: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 150px;
+  }
   .bienvenida h1 {
     font-size: 50px;
     width: 50%;
   }
   .bienvenida h3 {
     font-size: 20px;
+    color: #5a5a5a;
   }
-
+  .bienvenidaLogo {
+    width: 338px;
+  }
   #bienvenidaButton {
     width: 20%;
     height: 25%;
@@ -76,8 +113,7 @@
     font-weight: bold;
     border: 0 solid transparent;
     border-radius: 15px;
-    transition: background-color 0.3s ease;
-    transition: transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
   #bienvenidaButton:hover {
     background-color: #9154d9;
@@ -87,6 +123,31 @@
     cursor: pointer;
   }
 
+  /* Fondo Bienvenida */
+  .fondo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    background-color: red;
+    background-image: url("../images/FotosRelleno/CabifyParking.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+  }
+  .fondo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    border-radius: 15px;
+  }
+
+  /* Sugerencias */
   .seccionSugerencias {
     margin: 100px 50px 0px 100px;
   }
@@ -115,22 +176,31 @@
     width: 30%;
     height: 100%;
   }
-
   .texto {
     width: 70%;
     font-size: 1em;
     flex-grow: 1;
     overflow: hidden;
   }
-
+  .sugerenciasCard {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .saberMas {
     transition: background-color 0.3s ease;
+    padding: 5px;
+    margin-top: 10%;
+    font-weight: bold;
+    border: 0 solid transparent;
+    border-radius: 15px;
+    font-size: 1em;
+    cursor: pointer;
   }
-
   .saberMas:hover {
     background-color: #dbc5f3;
   }
 
+  /* Descargar App */
   .descargarApp {
     width: 100%;
     background-color: white;
