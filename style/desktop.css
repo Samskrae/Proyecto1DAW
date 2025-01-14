@@ -281,4 +281,44 @@
   .areaTexto a:hover {
     opacity: 0.8;
   }
+
+
+  /* Opiniones */
+  .sectionOpiniones{
+    margin: 100px 50px 0px 100px;
+  }
+  .sectionOpiniones h2 {
+    margin: 2% 5%;
+    
+  }
+
+  .opiniones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    color: black;
+    width: 100%;
+  }
+
+  .opinion{
+    padding: 25px;
+    width: 40%;
+    min-height: 11vh;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 2%;
+    }
+  .opinion img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+  .estrellas{
+    margin-top: 15px;
+  }
 }
